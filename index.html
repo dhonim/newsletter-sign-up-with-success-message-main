@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwindcss  -->
+  <link rel="stylesheet" href="./assets/css/output.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-DarkSlateGrey">
+    <!-- Sign-up form start -->
+<div id="sign-up-card" class="bg-white sm:max-w-5xl sm:mx-auto sm:mt-32 sm:rounded-2xl sm:p-5 sm:flex sm:flex-row-reverse">
+  <!-- left box -->
+  <div class="hidden sm:block">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up">
+  </div>
+  <div class="w-full sm:hidden">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" class="w-full" alt="illustration-sign-up">
+  </div>
+<!-- right box -->
+<div class="flex-1 p-10 sm:px-20 sm:py-14 text-CharcoalGrey space-y-5 sm:text-lg">
+  <h1 class="font-700 text-5xl sm:text-6xl">Stay updated!</h1>
+  <p class="font-semibold text-lg">Join 60,000+ product managers receiving monthly updates on:</p>
+  <ul class="font-semibold space-y-5 text-lg" >
+    <li class="flex items-center">
+      <span class="pr-2">
+        <img src="./assets/images/icon-list.svg" alt="listicon">
+      </span>
+      Product discovery and building what matters
+    </li>
+    <li class="flex items-center">
+      <span class="pr-2">
+        <img src="./assets/images/icon-list.svg" alt="listicon">
+      </span>
+      Measuring to ensure updates are a success
+    </li>
+    <li class="flex items-center">
+      <span class="pr-2">
+        <img src="./assets/images/icon-list.svg" alt="listicon">
+      </span>
+      And much more!</li>
+  </ul>
+  <form class="flex flex-col pt-5">
+    <div class="flex justify-between">
+      <label for="email" class="text-sm font-700 mb-1">Email address</label>  
+      <span class="text-sm font-700 text-red-500 mb-1 hidden" id="error-msg">Valid email required</span>
+    </div>
+      <input
+      type="text"
+      name="email"
+      id="email"
+      placeholder="email@company.com"
+      class="px-4 py-2.5 rounded outline-none border-2">
+      <div class="mt-4">
+        <button class="px-4 py-3 hover:bg-gradient-to-r from-[#ff576e] to-[#ff693c] font-700 rounded-md text-white bg-DarkSlateGrey w-full">Subscribe to monthly newsletter</button>
+      </div>
+  </form>
+</div>
+</div>
+<!-- Sign-up form end -->
+
+<!-- Success message start -->
+<div id="success-card" class="px-7 pt-32 hidden sm:px-10 sm:py-14 sm:rounded-3xl sm:mx-auto bg-white sm:max-w-md sm:mt-20">
+<div class="w-14">
+  <img src="./assets/images/icon-success.svg" alt="icon-success">
+</div>
+<h1 class="font-700 text-5xl text-DarkSlateGrey py-7">Thanks for subscribing!</h1>
+<p>A confirmation email has been sent to <a href="ash@loremcompany.com" class="font-semibold text-DarkSlateGrey">ash@loremcompany.com</a>. 
+  Please open it and click the button inside to confirm your subscription.</p>
+
+  <div class="mt-44 py-10 sm:py-0 sm:mt-10">
+    <button class="px-4 py-3 hover:bg-gradient-to-r from-[#ff576e] to-[#ff693c] font-700 rounded-md text-white bg-DarkSlateGrey w-full">Dismiss message</button>
+  </div>
+</div>
+
+<!-- Success message end -->
+
+<div class="attribution text-white text-md py-4">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Sanjeev</a>.
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
